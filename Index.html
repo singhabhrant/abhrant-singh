@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhrant Singh | Mechanical Design Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .section-title {
+            @apply text-3xl font-bold text-gray-800 mb-8 text-center;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-700">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-gray-200">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold text-gray-800">Abhrant Singh</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#projects" class="text-gray-600 hover:text-blue-600 transition-colors">Projects</a>
+                <a href="#about" class="text-gray-600 hover:text-blue-600 transition-colors">About</a>
+                <!-- IMPORTANT: Make sure your resume PDF file is in the same folder as this HTML file -->
+                <a href="Abhrant resume.pdf" target="_blank" class="text-gray-600 hover:text-blue-600 transition-colors">Resume</a>
+                <a href="#contact" class="text-gray-600 hover:text-blue-600 transition-colors">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <!-- Mobile menu button can be added here if needed -->
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section id="hero" class="container mx-auto px-6 py-20 md:py-32 text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight">
+                Mechanical Engineer & Product Designer
+            </h1>
+            <p class="mt-6 max-w-2xl mx-auto text-lg text-gray-600">
+                Passionate about creating innovative and efficient solutions through a blend of mechanical engineering principles and human-centered design.
+            </p>
+            <div class="mt-8 flex justify-center space-x-4">
+                <a href="#projects" class="bg-blue-600 text-white font-semibold px-8 py-3 rounded-lg hover:bg-blue-700 transition-transform transform hover:scale-105">
+                    View My Work
+                </a>
+                <a href="#contact" class="bg-white text-gray-700 font-semibold px-8 py-3 rounded-lg border border-gray-300 hover:bg-gray-100 transition-transform transform hover:scale-105">
+                    Get In Touch
+                </a>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+
+                    <!-- PROJECT 1: SAE AeroTHON -->
+                    <div class="bg-gray-50 rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300 group">
+                        <!-- HOW TO EDIT: Replace the placeholder image URL with a real photo of your project. -->
+                        <img src="https://placehold.co/600x400/3b82f6/ffffff?text=SAE+AeroTHON+Aircraft" alt="SAE AeroTHON Aircraft" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">SAE AeroTHON Competition</h3>
+                            <p class="text-sm text-gray-500 mb-4">Role: Team Captain | Result: All India Rank 17</p>
+                            <p class="mb-4">Led a team in the design, fabrication, and flight testing of a remote-controlled aircraft, focusing on aerodynamic efficiency and structural integrity.</p>
+                            <a href="#" class="font-semibold text-blue-600 hover:text-blue-800">View Case Study &rarr;</a>
+                        </div>
+                    </div>
+
+                    <!-- PROJECT 2: Automated Reel-Cutting Machine -->
+                    <div class="bg-gray-50 rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300 group">
+                        <!-- HOW TO EDIT: Replace the placeholder image URL with a real photo of your project. -->
+                        <img src="https://placehold.co/600x400/10b981/ffffff?text=Automated+Machine" alt="Automated Reel-Cutting Machine" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Automated Reel-Cutting Machine</h3>
+                            <p class="text-sm text-gray-500 mb-4">Role: Project Intern | FunEdu Pvt. Ltd.</p>
+                            <p class="mb-4">Engineered and executed mechanical refinements, including adjusting mounting tolerances and reconfiguring gear alignments to enhance performance.</p>
+                            <a href="#" class="font-semibold text-blue-600 hover:text-blue-800">View Case Study &rarr;</a>
+                        </div>
+                    </div>
+
+                    <!-- PROJECT 3: Drone Design & Assembly -->
+                    <div class="bg-gray-50 rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300 group">
+                        <!-- HOW TO EDIT: Replace the placeholder image URL with a real photo of your project. -->
+                        <img src="https://placehold.co/600x400/8b5cf6/ffffff?text=Drone+Design" alt="Drone Design and Assembly" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Drone Design & Assembly</h3>
+                            <p class="text-sm text-gray-500 mb-4">Role: Intern | Aerosense Technologies</p>
+                            <p class="mb-4">Specialized in drone frame die-casting, component assembly, and performance tuning through iterative testing and weight distribution analysis.</p>
+                            <a href="#" class="font-semibold text-blue-600 hover:text-blue-800">View Case Study &rarr;</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">About Me</h2>
+                <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-12">
+                    <!-- HOW TO EDIT: Replace the placeholder with a professional headshot of yourself. -->
+                    <img src="https://placehold.co/400x400/e0e0e0/333333?text=Abhrant+Singh" alt="Abhrant Singh" class="w-48 h-48 rounded-full object-cover shadow-lg">
+                    <div class="text-center md:text-left">
+                        <p class="text-lg mb-4">
+                            I am an enthusiastic and reliable Mechanical Engineering student from ABES Engineering College with a strong work ethic and a passion for turning complex problems into elegant, functional designs. My experience spans from leading competitive engineering teams to hands-on internships in automation and aerospace. I thrive in both team-based and independent capacities, bringing a proactive and detail-oriented mentality to every challenge.
+                        </p>
+                        <div class="mt-6">
+                            <h4 class="font-bold text-gray-800 mb-3">Core Competencies:</h4>
+                            <div class="flex flex-wrap justify-center md:justify-start gap-2">
+                                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Design & Modelling</span>
+                                <span class="bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full">Manufacturing</span>
+                                <span class="bg-purple-100 text-purple-800 text-sm font-medium px-3 py-1 rounded-full">Robotics & Automation</span>
+                                <span class="bg-yellow-100 text-yellow-800 text-sm font-medium px-3 py-1 rounded-full">Project Management</span>
+                                <span class="bg-gray-200 text-gray-800 text-sm font-medium px-3 py-1 rounded-full">Solidworks</span>
+                                <span class="bg-gray-200 text-gray-800 text-sm font-medium px-3 py-1 rounded-full">Fusion 360</span>
+                                <span class="bg-gray-200 text-gray-800 text-sm font-medium px-3 py-1 rounded-full">AutoCAD</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <footer id="contact" class="bg-gray-800 text-white py-16">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold mb-4">Let's Connect</h2>
+                <p class="max-w-xl mx-auto text-gray-300 mb-8">
+                    I'm currently seeking new opportunities and would love to hear from you. Whether you have a question or just want to say hi, feel free to reach out.
+                </p>
+                <div class="flex justify-center items-center space-x-8">
+                    <a href="mailto:singhabhrant21@gmail.com" class="flex items-center space-x-2 text-lg hover:text-blue-400 transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                        <span>singhabhrant21@gmail.com</span>
+                    </a>
+                    <a href="https://linkedin.com/in/singhabhrant" target="_blank" class="flex items-center space-x-2 text-lg hover:text-blue-400 transition-colors">
+                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        <span>LinkedIn</span>
+                    </a>
+                </div>
+                 <p class="mt-8 text-gray-400 text-sm">&copy; 2025 Abhrant Singh. All Rights Reserved.</p>
+            </div>
+        </footer>
+
+    </main>
+</body>
+</html>
