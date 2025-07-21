@@ -23,17 +23,32 @@
     <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-gray-200">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
             <a href="#" class="text-xl font-bold text-gray-800">Abhrant Singh</a>
+            
+            <!-- Desktop Navigation -->
             <div class="hidden md:flex space-x-8">
                 <a href="#projects" class="text-gray-600 hover:text-blue-600 transition-colors">Projects</a>
                 <a href="#about" class="text-gray-600 hover:text-blue-600 transition-colors">About</a>
-                <!-- IMPORTANT: Make sure your resume PDF file is in the same folder as this HTML file -->
                 <a href="Abhrant resume.pdf" target="_blank" class="text-gray-600 hover:text-blue-600 transition-colors">Resume</a>
                 <a href="#contact" class="text-gray-600 hover:text-blue-600 transition-colors">Contact</a>
             </div>
+
+            <!-- Mobile Menu Button -->
             <div class="md:hidden">
-                <!-- Mobile menu button can be added here if needed -->
+                <button id="mobile-menu-button" class="text-gray-800 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
             </div>
         </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="#projects" class="block py-2 px-6 text-sm text-gray-700 hover:bg-gray-100">Projects</a>
+            <a href="#about" class="block py-2 px-6 text-sm text-gray-700 hover:bg-gray-100">About</a>
+            <a href="Abhrant resume.pdf" target="_blank" class="block py-2 px-6 text-sm text-gray-700 hover:bg-gray-100">Resume</a>
+            <a href="#contact" class="block py-2 px-6 text-sm text-gray-700 hover:bg-gray-100">Contact</a>
+        </div>
     </header>
 
     <!-- Hero Section -->
@@ -63,7 +78,6 @@
 
                     <!-- PROJECT 1: SAE AeroTHON -->
                     <div class="bg-gray-50 rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300 group">
-                        <!-- HOW TO EDIT: Replace the placeholder image URL with a real photo of your project. -->
                         <img src="https://placehold.co/600x400/3b82f6/ffffff?text=SAE+AeroTHON+Aircraft" alt="SAE AeroTHON Aircraft" class="w-full h-56 object-cover">
                         <div class="p-6">
                             <h3 class="text-xl font-bold text-gray-800 mb-2">SAE AeroTHON Competition</h3>
@@ -75,7 +89,6 @@
 
                     <!-- PROJECT 2: Automated Reel-Cutting Machine -->
                     <div class="bg-gray-50 rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300 group">
-                        <!-- HOW TO EDIT: Replace the placeholder image URL with a real photo of your project. -->
                         <img src="https://placehold.co/600x400/10b981/ffffff?text=Automated+Machine" alt="Automated Reel-Cutting Machine" class="w-full h-56 object-cover">
                         <div class="p-6">
                             <h3 class="text-xl font-bold text-gray-800 mb-2">Automated Reel-Cutting Machine</h3>
@@ -87,7 +100,6 @@
 
                     <!-- PROJECT 3: Drone Design & Assembly -->
                     <div class="bg-gray-50 rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300 group">
-                        <!-- HOW TO EDIT: Replace the placeholder image URL with a real photo of your project. -->
                         <img src="https://placehold.co/600x400/8b5cf6/ffffff?text=Drone+Design" alt="Drone Design and Assembly" class="w-full h-56 object-cover">
                         <div class="p-6">
                             <h3 class="text-xl font-bold text-gray-800 mb-2">Drone Design & Assembly</h3>
@@ -106,8 +118,8 @@
             <div class="container mx-auto px-6">
                 <h2 class="section-title">About Me</h2>
                 <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-12">
-                    <!-- HOW TO EDIT: Replace the placeholder with a professional headshot of yourself. -->
-                    <img src="https://placehold.co/400x400/e0e0e0/333333?text=Abhrant+Singh" alt="Abhrant Singh" class="w-48 h-48 rounded-full object-cover shadow-lg">
+                    <!-- THIS IMAGE HAS BEEN UPDATED -->
+                    <img src="profile.jpg" alt="Abhrant Singh" class="w-48 h-48 rounded-full object-cover shadow-lg">
                     <div class="text-center md:text-left">
                         <p class="text-lg mb-4">
                             I am an enthusiastic and reliable Mechanical Engineering student from ABES Engineering College with a strong work ethic and a passion for turning complex problems into elegant, functional designs. My experience spans from leading competitive engineering teams to hands-on internships in automation and aerospace. I thrive in both team-based and independent capacities, bringing a proactive and detail-oriented mentality to every challenge.
@@ -149,7 +161,17 @@
                  <p class="mt-8 text-gray-400 text-sm">&copy; 2025 Abhrant Singh. All Rights Reserved.</p>
             </div>
         </footer>
-
     </main>
+
+    <!-- JavaScript for Mobile Menu -->
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
 </body>
 </html>
