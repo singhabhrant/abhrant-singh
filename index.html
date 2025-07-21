@@ -44,10 +44,10 @@
 
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden">
-            <a href="#projects" class="block py-2 px-6 text-sm text-gray-700 hover:bg-gray-100">Projects</a>
-            <a href="#about" class="block py-2 px-6 text-sm text-gray-700 hover:bg-gray-100">About</a>
-            <a href="Abhrant resume.pdf" target="_blank" class="block py-2 px-6 text-sm text-gray-700 hover:bg-gray-100">Resume</a>
-            <a href="#contact" class="block py-2 px-6 text-sm text-gray-700 hover:bg-gray-100">Contact</a>
+            <a href="#projects" class="mobile-menu-link block py-2 px-6 text-sm text-gray-700 hover:bg-gray-100">Projects</a>
+            <a href="#about" class="mobile-menu-link block py-2 px-6 text-sm text-gray-700 hover:bg-gray-100">About</a>
+            <a href="Abhrant resume.pdf" target="_blank" class="mobile-menu-link block py-2 px-6 text-sm text-gray-700 hover:bg-gray-100">Resume</a>
+            <a href="#contact" class="mobile-menu-link block py-2 px-6 text-sm text-gray-700 hover:bg-gray-100">Contact</a>
         </div>
     </header>
 
@@ -118,8 +118,8 @@
             <div class="container mx-auto px-6">
                 <h2 class="section-title">About Me</h2>
                 <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-12">
-                    <!-- THIS IMAGE HAS BEEN UPDATED WITH THE CORRECT RAW LINK -->
-                   <img src="profile.jpg" class="w-48 h-48 rounded-full object-cover shadow-lg">
+                    <!-- IMAGE LINK UPDATED TO NEW FILENAME -->
+                    <img src="./profile_pic.jpg" alt="Abhrant Singh" class="w-48 h-48 rounded-full object-cover shadow-lg">
                     <div class="text-center md:text-left">
                         <p class="text-lg mb-4">
                             I am an enthusiastic and reliable Mechanical Engineering student from ABES Engineering College with a strong work ethic and a passion for turning complex problems into elegant, functional designs. My experience spans from leading competitive engineering teams to hands-on internships in automation and aerospace. I thrive in both team-based and independent capacities, bringing a proactive and detail-oriented mentality to every challenge.
@@ -163,13 +163,22 @@
         </footer>
     </main>
 
-    <!-- JavaScript for Mobile Menu -->
+    <!-- JAVASCRIPT UPDATED TO FIX MOBILE MENU -->
     <script>
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
+        const mobileMenuLinks = document.querySelectorAll('.mobile-menu-link');
 
+        // Toggle menu on button click
         mobileMenuButton.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close menu when a link is clicked
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
         });
     </script>
 
